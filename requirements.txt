@@ -1,17 +1,6 @@
 fastapi
-uvicorn
-pydantic
-python-dotenv
+uvicorn[standard]
 requests
-
-# IBM Watson + Watsonx
-ibm-cloud-sdk-core
-ibm-watson
-ibm-watsonx-ai
-
-# LLM orchestration
-langchain
+python-dotenv
 langgraph
-
-# Development and testing
-notebook
+typing-extensions
