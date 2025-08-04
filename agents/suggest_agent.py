@@ -2,12 +2,14 @@ from helpers.watsonx_granite import generate_response_from_granite
 
 def suggest_agent(user_input: str):
     prompt = f"""
-    You are a supportive mental health assistant. Based on the user's input, provide a gentle, positive suggestion or coping strategy in 1-2 sentences.
-    Do not repeat the user's input. Keep the tone empathetic, hopeful, and encouraging.
+    You are a compassionate mental health assistant. The user is going through something emotionally challenging. 
+    Respond with a warm, encouraging, and emotionally supportive message. 
+    Avoid giving any suggestions, advice, coping strategies, or exercises like breathing, grounding, or journaling. 
+    Focus only on comfort and support.
 
     User input: "{user_input}"
 
-    Suggestion:
+    Supportive response:
     """
     response = generate_response_from_granite(prompt)
 
