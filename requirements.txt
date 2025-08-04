@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+requests
+
+# IBM Watson + Watsonx
+ibm-cloud-sdk-core
+ibm-watson
+ibm-watsonx-ai
+
+# LLM orchestration
+langchain
+langgraph
+
+# Development and testing
+notebook
