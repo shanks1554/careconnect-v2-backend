@@ -118,7 +118,7 @@ def process_user_message(user_input: str) -> dict:
     result = graph.invoke(initial_state)
     
     messages = result["response"]
-    final_response = "\n\n".join([msg["response"] for msg in messages])
+    final_response = messages[0]["response"] if messages else ""
     
     return {
         "final": final_response,
